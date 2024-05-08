@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CommandNodes">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../CommandNodes/out/artifacts/CommandNodes/CommandNodes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

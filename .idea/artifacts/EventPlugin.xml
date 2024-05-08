@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="EventPlugin">
+    <output-path>$PROJECT_DIR$/out/artifacts/EventPlugin</output-path>
+    <root id="archive" name="EventPlugin.jar">
+      <element id="module-output" name="EventPlugin" />
+    </root>
+  </artifact>
+</component>
