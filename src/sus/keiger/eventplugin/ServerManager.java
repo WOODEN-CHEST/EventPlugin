@@ -6,12 +6,12 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.*;
 import org.bukkit.util.BoundingBox;
-import sus.keiger.eventplugin.battlefield.BattlefieldManager;
+import sus.keiger.eventplugin.game.IGame;
+import sus.keiger.eventplugin.game.IGameManager;
 
-import java.util.EventListener;
-import java.util.HashMap;
+import java.util.*;
 
-public class ServerManager implements EventListener, ITickable
+public class ServerManager implements EventListener, ITickable, IGameManager
 {
     // Private fields.
     private HashMap<Player, IServerPlayer> _players = new HashMap<>();
@@ -21,9 +21,9 @@ public class ServerManager implements EventListener, ITickable
     private final World _nether;
     private final World _end;
 
+    private final HashSet<IGame> _games = new HashSet<>();
+    private final List<IGame> _gamesCompleted = new ArrayList<>();
 
-    /* Games. */
-    private final BattlefieldManager _battleFieldManager = new BattlefieldManager();
 
 
     // Constructors.
@@ -120,10 +120,6 @@ public class ServerManager implements EventListener, ITickable
     public void OnServerTickStartEvent(ServerTickStartEvent event)
     {
         Tick();
-        for (IServerPlayer TargetPlayer : _players.values())
-        {
-            TargetPlayer.Tick();
-        }
     }
 
     @EventHandler
@@ -155,6 +151,23 @@ public class ServerManager implements EventListener, ITickable
     @Override
     public void Tick()
     {
+        _players.values().forEach(IServerPlayer::Tick);
 
+        _gamesCompleted.clear();
+        _games.forEach(IGame::Tick);
+        _gamesCompleted.forEach(_games::remove);
+        _gamesCompleted.clear();
+    }
+
+    @Override
+    public void OnGameStart(IGame game)
+    {
+
+    }
+
+    @Override
+    public void OnGameComplete(IGame game)
+    {
+        _gamesCompleted.add(game);
     }
 }

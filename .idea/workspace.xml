@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ac0b181-8bfe-44fd-8b38-20e67a5f964a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPlugin.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sus/keiger/eventplugin/EventPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sus/keiger/eventplugin/IServerPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sus/keiger/eventplugin/ITickable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sus/keiger/eventplugin/PlayerFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sus/keiger/eventplugin/ServerManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sus/keiger/eventplugin/ServerPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sus/keiger/eventplugin/battlefield/BattlefieldGameInstance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sus/keiger/eventplugin/battlefield/BattlefieldManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sus/keiger/eventplugin/battlefield/PlayerKit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sus/keiger/eventplugin/battlefield/BattlefieldPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sus/keiger/eventplugin/game/GameTeam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sus/keiger/eventplugin/game/IGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sus/keiger/eventplugin/game/IGameManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sus/keiger/eventplugin/game/IGamePlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventPlugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EventPlugin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sus/keiger/eventplugin/ServerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sus/keiger/eventplugin/ServerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sus/keiger/eventplugin/battlefield/BattlefieldGameInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sus/keiger/eventplugin/battlefield/BattlefieldGameInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sus/keiger/eventplugin/battlefield/BattlefieldManager.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
