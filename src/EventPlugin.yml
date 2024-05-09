@@ -1,0 +1,5 @@
+main: sus.keiger.eventplugin.EventPlugin
+name: EventPlugin
+version: 1.20
+description: Idk what to write in here.
+author: WOODEN CHEST
